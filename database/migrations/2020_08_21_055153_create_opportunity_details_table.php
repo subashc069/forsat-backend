@@ -19,7 +19,7 @@ class CreateOpportunityDetailsTable extends Migration
             $table->mediumText('benefits');
             $table->mediumText('application_process');
             $table->mediumText('further_queries')->nullable();
-            $table->mediumText('elgibilities');
+            $table->mediumText('eligibility');
             $table->timestamp('start_date');
             $table->timestamp('end_date');
             $table->string('official_link')->nullable();
@@ -28,7 +28,11 @@ class CreateOpportunityDetailsTable extends Migration
         });
 
         Schema::table('opportunity_details', function (Blueprint $table) {
-            $table->foreign('opportunity_id')->references('id')->on('opportunities');
+            $table->foreign('opportunity_id')
+                ->references('id')
+                ->on('opportunities')
+                ->onDelete('cascade')
+            ;
         });
     }
 
