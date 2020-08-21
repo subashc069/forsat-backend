@@ -9,6 +9,6 @@ use Faker\Generator as Faker;
 $factory->define(Question::class, function (Faker $faker) {
     return [
         'question' => $faker->text(255),
-        'created_by' => User::all()->random(),
+        'created_by' => User::all()->random()->id,
     ];
 });
