@@ -29,7 +29,7 @@ Route::prefix('auth')->group(function (){
 //Route::get('opportunities', 'OpportunityController@index');
 //Route::get('opportunity/{opportunity}', 'OpportunityController@show');
 
-Route::resource('opportunity', 'OpportunityController');
+Route::resource('opportunity', 'OpportunityController')->middleware('auth:api');
 
 Route::group(['prefix' => 'lookups', 'middleware' => 'auth:api'], function (){
     Route::resource('category', 'CategoryController');

@@ -24,10 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="997b467c-2883-4971-86c6-aa111df45335" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OpportunityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OpportunityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597994576656</updated>
       <workItem from="1597994581582" duration="7953000" />
-      <workItem from="1598005217515" duration="11703000" />
+      <workItem from="1598005217515" duration="12927000" />
     </task>
     <servers />
   </component>
