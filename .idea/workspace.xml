@@ -24,8 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="997b467c-2883-4971-86c6-aa111df45335" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OpportunityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OpportunityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Opportunity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Opportunity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597994576656</updated>
       <workItem from="1597994581582" duration="7953000" />
-      <workItem from="1598005217515" duration="9135000" />
+      <workItem from="1598005217515" duration="11703000" />
     </task>
     <servers />
   </component>
@@ -217,9 +219,9 @@
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="501" y="296" width="354" height="141" key="NewPhpFileDialog/0.0.1366.741@0.0.1366.741" timestamp="1598003559334" />
-    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup" timestamp="1598064754861">
+    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup" timestamp="1598072129553">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1598064754861" />
+    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1598072129553" />
   </component>
 </project>

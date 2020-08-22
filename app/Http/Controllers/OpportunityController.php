@@ -36,7 +36,6 @@ class OpportunityController extends Controller
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
@@ -47,7 +46,7 @@ class OpportunityController extends Controller
      */
     public function show(Opportunity $opportunity)
     {
-        //
+        return $opportunity;
     }
 
     /**

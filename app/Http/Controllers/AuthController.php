@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    public function authFailed(){
+        return response('unauthenticated, make sure User is logged in', 401);
+    }
     public function register (Request $request){
         $validator = Validator::make($request->all(),[
             'firstName' => 'required|string|max:255',
@@ -56,6 +59,7 @@ class AuthController extends Controller
         $request->user()->token()->revoke();
         return response("successfully logged out", 200);
     }
+
 
     public function user(Request $request){
         return $request->user();

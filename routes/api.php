@@ -23,6 +23,17 @@ Route::prefix('auth')->group(function (){
     Route::post('/login', 'AuthController@login');
     Route::get('/logout', 'AuthController@logout')->middleware('auth:api');
     Route::get('/user', 'AuthController@user')->middleware('auth:api');
+    Route::get('authentication-failed', 'AuthController@authFailed')->name('auth-failed');
 });
 
-Route::get('/opportunity', 'OpportunityController@index');
+//Route::get('opportunities', 'OpportunityController@index');
+//Route::get('opportunity/{opportunity}', 'OpportunityController@show');
+
+Route::resource('opportunity', 'OpportunityController');
+
+Route::group(['prefix' => 'lookups', 'middleware' => 'auth:api'], function (){
+    Route::resource('category', 'CategoryController');
+    Route::resource('country', 'CountryController');
+});
+
+
