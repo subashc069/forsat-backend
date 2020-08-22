@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\OpportunityStore;
 use App\Http\Resources\OpportunityCollection;
+use App\Http\Resources\Opportunity as OpportunityResource;
+
 use App\Models\Opportunity;
 use Illuminate\Http\Request;
 
@@ -26,7 +28,7 @@ class OpportunityController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -37,7 +39,17 @@ class OpportunityController extends Controller
      */
     public function store(OpportunityStore $request)
     {
-        return "testing data";
+        $opportunity = Opportunity::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'category_id' => $request->categoryId,
+            'country_id' => $request->countryId,
+            'deadline' => $request->deadline,
+            'organizer' => $request->organizer,
+            'created_by' => $request->createdBy
+        ]);
+        return new OpportunityResource($opportunity);
+
     }
 
     /**
@@ -48,7 +60,7 @@ class OpportunityController extends Controller
      */
     public function show(Opportunity $opportunity)
     {
-        return $opportunity;
+        return new OpportunityResource($opportunity);
     }
 
     /**
@@ -69,9 +81,18 @@ class OpportunityController extends Controller
      * @param  \App\Models\Opportunity  $opportunity
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Opportunity $opportunity)
+    public function update(OpportunityStore $request, Opportunity $opportunity)
     {
-        //
+        $opportunity->update([
+            'title' => $request->title,
+            'description' => $request->description,
+            'category_id' => $request->categoryId,
+            'country_id' => $request->countryId,
+            'deadline' => $request->deadline,
+            'organizer' => $request->organizer,
+            'created_by' => $request->createdBy
+        ]);
+        return new OpportunityResource($opportunity);
     }
 
     /**
@@ -82,6 +103,6 @@ class OpportunityController extends Controller
      */
     public function destroy(Opportunity $opportunity)
     {
-        //
+        $opportunity->delete();
     }
 }

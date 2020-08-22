@@ -26,9 +26,13 @@ class OpportunityStore extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string|255',
+            'title' => 'required|string|max:255',
             'description' => 'required',
-            'deadline' => 'required|datetime'
+            'categoryId' => 'required|numeric',
+            'countryId' => 'required|numeric',
+            'deadline' => 'required|date',
+            'organizer' => 'required|string|max:255',
+            'createdBy' => 'required|numeric',
         ];
     }
 
